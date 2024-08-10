@@ -1,0 +1,14 @@
+Package: linux-image-3.18-140-htc-oce
+Source: linux-android-htc-oce
+Version: 0.0.0+git20240810110455.86d5787.droidian
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 25827
+Section: kernel
+Priority: optional
+Description: Linux kernel for HTC U-Ultra
+ This package contains the Linux kernel for the HTC U-Ultra device.
+ .
+ Note: This package only ships the kernel image and modules, you should probably
+ look at the linux-bootimage-3.18-140-htc-oce package for a bootimage suitable
+ for Android boot loaders.

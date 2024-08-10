@@ -1,0 +1,5 @@
+# Automatically added by dh_installmodules/13.16
+if [ -e /boot/System.map-3.18-140-htc-oce ]; then
+	depmod -a -F /boot/System.map-3.18-140-htc-oce 3.18-140-htc-oce || true
+fi
+# End automatically added section

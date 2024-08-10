@@ -1,0 +1,5 @@
+c5d50fee1cbb37bae642cb7170520fa0  boot/boot.img-3.18-140-htc-oce
+181ec5ea07426fbbe15068ee653049a4  boot/recovery.img-3.18-140-htc-oce
+2e9074f503f24af4dddff587b5fc6f79  boot/vbmeta.img-3.18-140-htc-oce
+1fe706353cce46d8b50acc91812f9d4b  lib/flash-bootimage/3.18-140-htc-oce.conf
+de7fca8ba2029add3fefe18262d72cba  usr/share/doc/linux-bootimage-3.18-140-htc-oce/changelog.gz

@@ -1,0 +1,11 @@
+Package: linux-headers-3.18-140-htc-oce
+Source: linux-android-htc-oce
+Version: 0.0.0+git20240810110455.86d5787.droidian
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 45055
+Depends: linux-image-3.18-140-htc-oce (= 0.0.0+git20240810110455.86d5787.droidian)
+Section: kernel
+Priority: optional
+Description: Linux kernel for HTC U-Ultra - Headers
+ This package contains the Linux kernel headers for the HTC U-Ultra device.
