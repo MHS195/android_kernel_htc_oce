@@ -1,0 +1,13 @@
+sudo apt-get update && sudo apt-get upgrade -y
+
+sudo apt install -y curl python2 llvm lld wget vim git ccache automake flex lzop bison \ 
+gperf build-essential zip zlib1g-dev g++-multilib libxml2-utils bzip2 libbz2-dev libbz2-1.0 \ 
+libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng maven \ 
+libssl-dev pwgen libswitch-perl policycoreutils minicom libxml-sax-base-perl libxml-simple-perl \ 
+bc libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev xsltproc \ 
+unzip device-tree-compiler kmod python3 python3-pip
+
+export PATH="$(pwd)/google_gcc-4.9/aarch64-linux-android-4.9/bin:$(pwd)/google_gcc-4.9/arm-linux-androideabi-4.9/bin:$PATH"
+make -j$(nproc --all) ARCH=arm64 O=out CROSS_COMPILE=aarch64-linux-android- CROSS_COMPILE_ARM32=arm-linux-androideabi- LXC_defconfig
+
+make -j$(nproc --all) ARCH=arm64 O=out CROSS_COMPILE=aarch64-linux-android- CROSS_COMPILE_ARM32=arm-linux-androideabi-
