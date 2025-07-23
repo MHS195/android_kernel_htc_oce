@@ -303,6 +303,7 @@ static char *fw_path[32] = {
 	"/lib/firmware/updates",
 	"/lib/firmware/" UTS_RELEASE,
 	"/lib/firmware",
+    "/lib64/firmware/" UTS_RELEASE,
 	"/lib64/firmware",
 	"/lib/firmware/image"
 //++ Modem BSP
@@ -310,8 +311,19 @@ static char *fw_path[32] = {
            We added back to WA UMTS radio not be loaded as default*/
 	,"/firmware/image"
         /* Support dynamic modem image switch */
-        ,"/firmware/cradio"
+        ,"/firmware/cradio",
 //-- Modem BSP
+#ifdef CONFIG_ANDROID
+	"/firmware/" UTS_RELEASE,
+	"/firmware",
+	"/vendor/firmware/" UTS_RELEASE,
+	"/vendor/firmware",
+	"/system/vendor/firmware/" UTS_RELEASE,
+	"/system/vendor/firmware",
+	"/system/etc/firmware",
+	"/odm/firmware/" UTS_RELEASE,
+	"/odm/firmware",
+#endif
 };
 
 /*
